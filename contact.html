@@ -20,17 +20,55 @@
 
     <div class="body row content-background">
       <div class="hero-text">
-        <h1>About Us</h1>
-        <p>
-          Started in 2026, we felt the supply of business-class hardware on the
-          market was being saturated with offerings that we deemed to not be a
-          good value.
-        </p>
+        <h1>Want to get in contact with us?</h1>
+        <form id="contactForm" onsubmit="submitForm()">
+          <div>
+            <div>
+              <label for="nameInput">Name</label>
+              <input
+                id="nameInput"
+                type="text"
+                placeholder="John Smith *"
+                required
+              />
+            </div>
+            <div>
+              <label for="businessInput">Business</label>
+              <input
+                id="businessInput"
+                type="text"
+                placeholder="Business Computer Supply"
+              />
+            </div>
+            <div>
+              <label for="emailInput">Email</label>
+              <input
+                id="emailInput"
+                type="email"
+                required
+                placeholder="user@example.com *"
+              />
+            </div>
+          </div>
+          <button
+            type="submit"
+            style="
+              margin-left: auto;
+              margin-right: auto;
+              margin-top: 10px;
+              padding: 5px;
+            "
+          >
+            Submit
+          </button>
+        </form>
       </div>
     </div>
 
     <footer class="footer row">
       <p>BCS 350 Project 1</p>
     </footer>
+
+    <script src="scripts/script.js"></script>
   </body>
 </html>
